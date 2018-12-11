@@ -1,0 +1,310 @@
+/*
+Theme Name: spotlight-wp
+Author: Jan C Peters
+Description: The styling of the spotlight blog.
+Version: 0.1
+Test Domain: slwp-theme
+*/
+
+
+/* GENERAL ELEMENTS */
+
+/* links */
+html a {
+  outline: none;
+  text-decoration: none;
+  color: yellow;
+}
+
+/* body */
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+
+/* OVERALL STRUCTURE */
+.inner-column {
+  display: block;
+  padding: 0 40px 0 60px;
+}
+
+#left-column {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+}
+
+#right-column {
+  display: block;
+  position: absolute;
+  right: 0;
+  /*height: 100%;*/
+  height: auto;
+  top: 0;
+  width: 40px;
+}
+
+
+/* HEADER: slideshow */
+
+#slideshow-overlay {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#slideshow-overlay .logo-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  left: 0;
+}
+
+#slideshow-overlay .logo {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0px auto;
+}
+
+#slideshow-control {
+  position: absolute;
+  display: block;
+  right: -40px;
+  bottom: 0px;
+  height: 50%;
+  width: 40px;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide .desc {
+  position: absolute;
+  display: block;
+  right: 10%;
+  width: 30%;
+  bottom: 10%;
+  height: 30%;
+}
+
+.slide img {
+  width:100%;
+  height:auto;
+}
+
+#dots-list {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* SLIDESHOW PAGING */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    column-count: 1;
+    
+    left: 0;
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    padding: 0;
+
+    border: 1px white solid;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus,
+.slick-dots li button:active
+{
+    outline: none;
+}
+.slick-dots li:hover,
+.slick-dots li:focus
+{
+    background-color: darkgray;
+}
+
+.slick-dots li.slick-active
+{
+    background-color: lightgray;
+}
+
+/* SIDEBARS */
+
+#left-column .menu-label {
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+#right-column .search-box {
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+#right-column .search {
+  width: 100%;
+  height: auto;
+}
+
+/* SNIPPETS LISTING */
+#snippets-listing {
+}
+
+/* POST SNIPPETS */
+
+.snippet-box {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 0;
+}
+
+.snippet-box-inner {
+  padding: 30px;
+}
+
+.snippet-box img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.snippet-box .title {
+  display: block;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0.5em auto;
+}
+
+.snippet-box .excerpt {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.buffer {
+  width: 50%;
+  display: inline-block;
+  height: 100px;
+}
+
+/* LOAD MORE BUTTON */
+
+.loadmore-container {
+  clear:both;
+  display:block;
+  text-align: center;
+}
+
+.loadmore-button {
+  border: 1px solid white;
+  padding: 10px;
+  text-transform: uppercase;
+  margin:auto;
+  display:inline-block;
+}
+
+
+/* SINGLE POST */
+.block {
+  width:100%;
+  text-align: center;
+  position: relative;
+}
+
+.logo-block {
+  height:3em;
+  margin-bottom: 4em;
+}
+
+.logo {
+  height:100%;
+  width:auto;
+  display: inline-block;
+}
+
+.title-block .title {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.title-image img {
+  width:100%;
+  height:auto;
+}
+
+.post-category-container {
+  display: block;
+  position: absolute;
+  right: -40px;
+  width: 40px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.post-category-display {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  writing-mode: vertical-lr;
+  text-align: right;
+  height: 90%;
+  padding-left: 5px;
+}
+
+.content-block.block {
+  text-align: left;
+}

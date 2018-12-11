@@ -1,0 +1,85 @@
+/*----------------------------------------------------------------------------*/
+/* INSTAGRAM WIDGET STYLES */
+.igfeed-widget {
+display: table-row;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+.igfeed-widget ul {
+width: 100%;
+float: left;
+margin: 0px;
+padding: 0px;
+list-style: none outside none;
+}
+.igfeed-widget ul li {
+float: left;
+height: auto;
+margin: 0px;
+padding: 0px;
+position: relative;
+/*width: 10%;*/
+background-color: #000000;
+}
+.igfeed-widget a, .igfeed-widget a:visited, .igfeed-widget a:focus {
+text-decoration: none;
+color: #ffffff;
+}
+.igfeed-widget a:hover {
+text-decoration: none;
+color: #ffffff;
+}
+.igfeed-widget a img {
+display: block;
+width: 100%;
+height: auto;
+border: 0px none;
+margin: 0;
+padding: 0;
+opacity: 1;
+z-index: 0;
+transition: opacity 0.2s ease-in;
+transition-delay: 0.1s;
+}
+.igfeed-widget a:hover img {
+opacity: 0.5;
+}
+.igfeed-widget a .ig-stat {
+text-align: center;
+font-weight: bold;
+margin: auto;
+padding: 0px;
+position: absolute;
+display: block;
+width: 100%;
+height: auto;
+top: 40%;
+opacity: 0;
+z-index: 1;
+transition: opacity 0.2s ease-in;
+transition-delay: 0.1s;
+}
+.igfeed-widget a:hover .ig-stat {
+opacity: 1;
+}
+
+.igfeed-widget p {
+text-align: left;
+padding: 0px 0px 0px 30%;
+margin: 0px;
+}
+.igfeed-widget span {
+padding: 2px 2px 2px 2em;
+float: left;
+clear: both;
+background-size: 1em 1em;
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+}
+.igfeed-widget .ig-likes {
+background-image: url('../assets/like-50x50.png');
+}
+.igfeed-widget .ig-comments {
+background-image: url('../assets/comment-50x50.png');
+}
